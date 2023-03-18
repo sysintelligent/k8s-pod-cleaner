@@ -1,0 +1,27 @@
+# permissions for end users to view podcleanups.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  labels:
+    app.kubernetes.io/name: clusterrole
+    app.kubernetes.io/instance: podcleanup-viewer-role
+    app.kubernetes.io/component: rbac
+    app.kubernetes.io/created-by: k8s-pod-cleaner
+    app.kubernetes.io/part-of: k8s-pod-cleaner
+    app.kubernetes.io/managed-by: kustomize
+  name: podcleanup-viewer-role
+rules:
+- apiGroups:
+  - podcleaner.example.com
+  resources:
+  - podcleanups
+  verbs:
+  - get
+  - list
+  - watch
+- apiGroups:
+  - podcleaner.example.com
+  resources:
+  - podcleanups/status
+  verbs:
+  - get

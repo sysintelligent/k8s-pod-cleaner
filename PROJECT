@@ -1,0 +1,16 @@
+domain: example.com
+layout:
+- go.kubebuilder.io/v3
+projectName: k8s-pod-cleaner
+repo: github.com/example/k8s-pod-cleaner
+resources:
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: example.com
+  group: podcleaner
+  kind: PodCleanup
+  path: github.com/example/k8s-pod-cleaner/api/v1
+  version: v1
+version: "3"
