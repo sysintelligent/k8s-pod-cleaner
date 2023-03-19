@@ -1,5 +1,5 @@
 # k8s-pod-cleaner
-// TODO(user): Add simple overview of use/purpose
+This repository implements a simple operator to delete the pods not in running status.
 
 ## Description
 // TODO(user): An in-depth paragraph about your project and overview of use
