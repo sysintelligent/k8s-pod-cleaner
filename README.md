@@ -2,7 +2,15 @@
 This repository implements a simple operator to delete the pods not in running status.
 
 ## Description
-// TODO(user): An in-depth paragraph about your project and overview of use
+Kubernetes operators are software extensions that automate the deployment, management, and scaling of applications on a Kubernetes cluster. Developing a Kubernetes operator can be a complex task, but with the help of ChatGPT, you can streamline the process.
+
+To begin developing a Kubernetes operator, you first need to understand the application you want to deploy and manage. This involves identifying the key components and dependencies, as well as the various parameters and configurations required for proper functioning.
+
+Next, you can use ChatGPT to help you write the code for your operator. ChatGPT can assist you in writing the necessary Kubernetes manifests, as well as any custom code needed to handle specific tasks.
+
+Once the code is written, you can use ChatGPT to test and debug your operator. ChatGPT can help you identify and fix any issues with the operator, as well as optimize it for performance and efficiency.
+
+Overall, developing a Kubernetes operator using ChatGPT can significantly streamline the process, making it easier to deploy and manage complex applications on a Kubernetes cluster.
 
 ## Getting Started
 You’ll need a Kubernetes cluster to run against. You can use [KIND](https://sigs.k8s.io/kind) to get a local cluster for testing, or run against a remote cluster.
