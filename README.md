@@ -1,5 +1,5 @@
 # k8s-pod-cleaner
-This repository implements a simple operator to delete the pods not in running status.
+This repository implements a simple operator to delete the pods not in running status using Kubebuilder with the help of ChatGPT.
 
 ## Description
 Kubernetes operators are software extensions that automate the deployment, management, and scaling of applications on a Kubernetes cluster. Developing a Kubernetes operator can be a complex task, but with the help of ChatGPT, you can streamline the process.
@@ -13,7 +13,7 @@ Once the code is written, you can use ChatGPT to test and debug your operator. C
 Overall, developing a Kubernetes operator using ChatGPT can significantly streamline the process, making it easier to deploy and manage complex applications on a Kubernetes cluster.
 
 ## Getting Started
-You’ll need a Kubernetes cluster to run against. You can use [KIND](https://sigs.k8s.io/kind) to get a local cluster for testing, or run against a remote cluster.
+You’ll need a Kubernetes cluster to run against. You can use [Minikube](https://github.com/kubernetes/minikube) to get a local cluster for testing, or run against a remote cluster.
 **Note:** Your controller will automatically use the current context in your kubeconfig file (i.e. whatever cluster `kubectl cluster-info` shows).
 
 ### Running on the cluster
@@ -49,7 +49,7 @@ UnDeploy the controller to the cluster:
 make undeploy
 ```
 
-## Contributing
+## Running
 // TODO(user): Add detailed information on how you would like others to contribute to this project
 
 ### How it works
@@ -83,20 +83,3 @@ make manifests
 **NOTE:** Run `make --help` for more information on all potential `make` targets
 
 More information can be found via the [Kubebuilder Documentation](https://book.kubebuilder.io/introduction.html)
-
-## License
-
-Copyright 2023.
-
-Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License.
-You may obtain a copy of the License at
-
-    http://www.apache.org/licenses/LICENSE-2.0
-
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.
-
